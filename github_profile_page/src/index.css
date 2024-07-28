@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #111729;
+  --white: #cdd5e0;
+  --dark-purple: #1d1b48;
+  --blue: #3662e3;
+  --dark-grey: #20293a;
+  --mid-grey: #364153;
+  --light-grey: #4a5567;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--dark-grey);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 30vh;
+  position: relative;
+  background-image: url("./assets/hero-image-github-profile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 80vw;
+  height: fit-content;
+  margin: auto;
+  padding-inline: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  padding-top: 7.5rem;
+}
+
+h1 {
+  color: var(--white);
+}
+
+.no-data {
+  padding-top: 4rem;
+}
+
+.loader {
+  font-size: 1.6rem;
+  color: white;
+  padding-top: 4rem;
+}
+
+.description {
+  color: var(--white);
+}
+
+.searchContainer {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 35vw;
+  padding-left: 1.2rem;
+  height: 8vh;
+  border-radius: 0.6rem;
+  background-color: var(--dark-grey);
+}
+
+.search-input {
+  height: 60%;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0 0.8rem;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.search-input:focus,
+.search-input:active {
+  outline: none;
+  border: none;
+}
+
+.stats-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  top: -40px;
+  gap: 4rem;
+}
+
+.stats-container img {
+  height: auto;
+  width: 125px;
+  box-sizing: content-box;
+  border: 1rem solid var(--dark-grey);
+  border-radius: 10px;
+}
+
+.stat {
+  height: 5vh;
+  width: fit-content;
+  padding: 1.4rem;
+  border-radius: 8px;
+  background-color: var(--black);
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-grey);
+}
+
+.stat-key {
+  color: var(--white);
+  padding-right: 0.8rem;
+}
+
+.stat-value {
+  color: white;
+  padding-left: 0.8rem;
+}
+
+.stats-details {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.repo-section {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: center;
+}
+
+.repo-card {
+  min-width: 40%;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(to right, #111729, #1d1b48);
+}
+
+.repo-card div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.repo-card p {
+  color: var(--light-grey);
+}
+
+.repo-card h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.repo-card .description {
+  color: var(--white);
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
+
+.repo-stats ul {
+  list-style: none;
+  color: var(--white);
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 0.4rem;
+}
+
+.repo-card-stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+}
+
+.repo-card-stat img {
+  width: 2rem;
+}
+
+.view-all {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.2rem auto;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  color: var(--blue);
+}
